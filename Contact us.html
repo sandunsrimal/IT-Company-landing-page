@@ -11,6 +11,8 @@
 
     <title>BeeSoft(pvt).Ltd</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="contact us.css" type="text/css" />
+    
   </head>
   <body>
       <!--Navigation bar start-->
@@ -32,7 +34,7 @@
                 <a class="nav-link" href="service.html">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="products.html">Products</a>
               </li>
               <a href="Contact us.html">
               <button class="btn btn-primary ms-lg-3">Contact us</button>
@@ -43,11 +45,47 @@
         </div>
       </nav>
     <!--Navigation bar end-->
-<section>
+<section class="co">
 
-    <div class="cu container py-5"> 
-
-    </div>
+   <div class="cont">
+      <div class="conta">
+        <div style="text-align:center">
+          <h2 style="font-size:50px;">Contact Us</h2>
+          <p style="font-size:20px;">If you have any question or any queries a member of staff will always be happy to help you.</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="Contact us.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="Contact us.html">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">Denmark</option>
+                <option value="usa">France</option>
+                <option value="usa">Germany</option>
+                <option value="usa">Indonesia</option>
+                <option value="usa">Pakistan</option>
+                <option value="usa">Russia</option>
+                <option value="usa">Sri Lanka</option>
+                <option value="usa">Thailand</option>
+                <option value="usa">Zimbabwe</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+</div>
+    
         
 </section>
      <!-- footer-start-->
@@ -88,7 +126,7 @@
                 <h3>News Letter</h3>
                 <form>
                     <input type="email" placeholder="Enter your email" required>
-                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    <button class="btn" type="submit">Submit</button>
                 </form>
                 <div class="social-icons">
                     <i class="fab fa-facebook"></i>

@@ -7,7 +7,10 @@
 
 
 body{
-   background-image: url('cimg.jpg');
+   background-image:url(cimg.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
 }
 .sv{
     padding-bottom: 5%;
@@ -19,32 +22,48 @@ h1{
     margin-bottom: 50px;
     color:rgb(49, 48, 48);
     font-style: bold;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 50px;
    
 
 }
 .main{
     width: 100%;
-    min-height: 440px;
+    height: 100%;
     text-align:center;
     position: relative;
     cursor: pointer;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    margin-top: 70px;
+    
+    
 }
 .service{
     width: 100%;
-    min-height: 100% auto;
-    background:white;
-    padding: 30px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 0;
+    height: 400px;
+    background:rgba(27, 27, 27, 0.925);
+    color: white;
+    
+    border-radius: 25px;
+    position: relative;
+    bottom: 10px;
     z-index: 1;
     box-shadow: 0 0 20px -15px #030380;
     transition: transform .8s;
-    border: 2px solid black;
-    margin-bottom: 15%;
+    border: 2px solid rgba(0, 0, 0, 0.425);
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
 }
-
+.service p{
+    padding-top: 20px;
+}
+.service h4{
+    padding-top: 50px;
+}
 
 .logo{
     width: 130px;
@@ -61,12 +80,14 @@ h1{
     height: 80px;
     transition: transform 1s;
     clip-path: circle();
+    border: white 5px solid;
+    border-radius: 100px;
 
 }
 .service h4{
        height: 35px;
        width: 80%;
-       background: #fcea23;
+       
        margin: 50px auto;
        position: relative;
 
@@ -78,7 +99,7 @@ h1{
     content: '';
     width: 40px;
     height: 30px;
-    background: linear-gradient(to right,#fff,#007bff);
+   
     position: absolute;
     right: -5px;
     top: -5px;
@@ -89,6 +110,7 @@ h1{
     content: '';
     width: 40px;
     height: 30px;
+    font-weight: 20px;
     background: linear-gradient(to right);
     position: absolute;
     left: -5px;
@@ -96,31 +118,10 @@ h1{
     z-index: -1;
 
 }
-.shadowone{
-    height: 200px;
-    width: 80%;
-    background: #fff;
-    position: absolute;
-    border-radius: 10px;
-    bottom: 0;
-    left: 10%;
-    z-index: -1;
-    box-shadow: 0 0 20px -15px #030380;
-    transition: transform .8s;
-}
-.shadowtwo{
-    height: 200px;
-    width: 64%;
-    background: #fff;
-    position: absolute;
-    border-radius: 10px;
-    bottom: 0;
-    left: 18%;
-    z-index: -2;
-}
+
 .main:hover .service{
     transform: translateY(-50px);
-    background-color: #fcea23;
+    
 
 }
 .main:hover .shadowone{
@@ -194,23 +195,21 @@ html{
 }
 form{
     padding-bottom: 15px;
-    display: flex;
+   
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px #fff;
     margin-bottom: 50px;
 }
-form .far{
-    font-size: 18px;
-    margin-right: 10px;
 
+form .btn{
+    margin-top: 20px;
+    margin-left: -3px;
 }
+
 form input{
     width: 100%;
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
+    
 }
 
 .social-icons .fab{
@@ -272,5 +271,25 @@ li a:hover{
 .read{
     margin-bottom: 0;
     margin-left: 60%;
+    background: #fcea23;
+    border-color: #fcea23;
+    font-weight: 800;
+    padding: 0.5rem 0.8rem;
+    border-radius: 25px;
+    color: rgb(44, 44, 44);
+    margin-left: 1rem;
+    color: white;
+
+}
+.read:hover{
+    background: rgb(254, 255, 180);
+    border-color: rgb(232, 255, 180);
+    font-weight: 800;
+    padding: 0.5rem 0.8rem;
+    border-radius: 15px;
+    color: rgb(77, 77, 77);
+}
+.read a{
+    color: rgb(66, 66, 66);
 }
 

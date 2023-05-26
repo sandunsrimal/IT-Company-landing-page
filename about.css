@@ -1,0 +1,68 @@
+/*about page*/
+
+.about-section{
+    text-align: center;
+    background: none;
+    padding: 50px;
+    float: none!important;
+
+}
+.para1{
+    font-size: 22px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#image{
+    vertical-align: middle;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 30%;
+    max-width: 90%;
+}
+.innovation-section{
+    text-align: center;
+    background: none;
+    padding: 50px;
+    float: none!important;
+
+}
+.para2{
+    font-size: 22px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.vacancy-section{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('vacancy.jpg');
+    /* background-image: url(images/vacancy.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position-y: 120px;
+    text-align: center;
+    margin-bottom: -140px
+}
+.join{
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+}
+.para3{
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+.button{
+    margin-top: 30px;
+    background: #fcea23;
+    color: rgb(82, 80, 80);
+    border-radius: 20px;
+    font-size: 18px;
+    border: none;
+    padding: 8px 40px;
+    font-weight: 300;
+}
+.button:hover{
+    background: rgb(254, 255, 180);
+    border-radius: 13px;
+}
